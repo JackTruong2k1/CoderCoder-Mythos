@@ -1,3 +1,4 @@
+/*css reset */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -53,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*css reset */
 :root {
   --main-bg: hsl(0, 0%, 100%);
   --text-dark: hsl(233, 14%, 25%);
@@ -64,4 +66,9 @@ h1, h2, h3, h4, h5, h6 {
   --btn-secondary-border: hsl(0, 0%, 100%);
   --btn-secondary-text: hsl(0, 0%, 100%);
   --fullwidth-bg: hsl(320, 85%, 41%);
+}
+
+.wrapper {
+  width: min(100% - 3rem, 62.5rem);
+  margin-inline: auto;
 }/*# sourceMappingURL=index.css.map */
