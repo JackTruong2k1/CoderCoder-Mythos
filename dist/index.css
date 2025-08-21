@@ -1,6 +1,8 @@
 /*css reset */
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -43,18 +58,28 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /*css reset */
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
 :root {
   --main-bg: hsl(0, 0%, 100%);
   --text-dark: hsl(233, 14%, 25%);
@@ -66,6 +91,20 @@ h1, h2, h3, h4, h5, h6 {
   --btn-secondary-border: hsl(0, 0%, 100%);
   --btn-secondary-text: hsl(0, 0%, 100%);
   --fullwidth-bg: hsl(320, 85%, 41%);
+}
+
+h1 {
+  font-size: 2.625rem;
+  font-size: clamp(2.625rem, 1.9647887324rem + 2.8169014085vw, 4.5rem);
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 1.985915493rem + 1.1267605634vw, 3rem);
+}
+
+p {
+  font-size: clamp(1.5rem, 1rem + 2vw, 1.75rem);
 }
 
 .wrapper {
