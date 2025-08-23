@@ -5,7 +5,12 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(util.rem(36), util.rem(16) + 2vw, util(rem(48)));
+  font-size: clamp(util.rem(36), util.rem(16) + 2vw, util.rem(48));
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
 }
 
 p {
